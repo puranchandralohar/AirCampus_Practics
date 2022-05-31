@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/928e2332c6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="left">
+            <div class="header flex">
+                <div class="profile-pic">
+                    <img src="https://media-exp1.licdn.com/dms/image/C5603AQGWLQsHIujEJw/profile-displayphoto-shrink_200_200/0/1644674370808?e=1654128000&v=beta&t=ppsyl4X0fiTN_QwXTgjYNXXJrJQRKh-2P3xgZz9XLTI"
+                        alt="Puran Chandra Lohar">
+                </div>
+                <div class="header-links">
+                    <i class="fa-solid fa-circle-notch"></i>
+                    <i class="fa-solid fa-message"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search or Start a new chat">
+            </div>
+
+            <div class="chats">
+                <div class="person active-tab flex">
+                    <div class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Jitendra_Kumar_promoting_Shubh_Mangal_Zyada_Savdhaan.jpg"
+                            alt="Jitendra Kumar">
+                    </div>
+                    <div class="msg">
+                        <h3>Sachiv Ji</h3>
+                        <p><i class="fa-solid fa-check"></i> How are You?</p>
+                    </div>
+
+                </div>
+                <div class="person flex">
+                    <div class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Neena_Gupta.jpg/220px-Neena_Gupta.jpg"
+                            alt="Neena Gupta">
+
+                    </div>
+                    <div class="msg">
+                        <h3>Madam Ji</h3>
+                        <p><i class="fa-solid fa-check"></i> How are You?</p>
+                    </div>
+
+                </div>
+                <div class="person flex">
+                    <div class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Raghuvir_Yadav.jpg/220px-Raghuvir_Yadav.jpg"
+                            alt="Ragubir Yadav">
+                    </div>
+                    <div class="msg">
+                        <h3>Pradhaan Ji</h3>
+                        <p><i class="fa-solid fa-check"></i> Great Job....</p>
+                    </div>
+
+                </div>
+                <div class="person flex">
+                    <div class="image">
+                        <img src="https://m.media-amazon.com/images/M/MV5BY2Q1MWMzN2ItYTA2ZS00NDRmLTk1MzAtMjM3Y2FlNTU0ZDliXkEyXkFqcGdeQXVyNDAzNDk0MTQ@._V1_UY317_CR20,0,214,317_AL__QL50.jpg"
+                            alt="Chandan Roy">
+                    </div>
+                    <div class="msg">
+                        <h3>Vikash</h3>
+                        <p> <i class="fa-solid fa-check"></i> Kab aur Kaha ?</p>
+                    </div>
+
+                </div>
+                <div class="person flex">
+                    <div class="image">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="Sanvika">
+                    </div>
+                    <div class="msg">
+                        <h3>Rinki</h3>
+                        <p> <i class="fa-solid fa-check"></i> Thank You .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-header flex">
+                <div class="active-chat flex">
+                    <div class="image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Jitendra_Kumar_promoting_Shubh_Mangal_Zyada_Savdhaan.jpg"
+                            alt="Sachiv Ji aka Jitendra Kumar">
+                    </div>
+                    <div class="name">
+                        <h3>Sahiv Ji</h3>
+                        <p>Last Seen today at 4:11 PM</p>
+                    </div>
+                </div>
+
+                <div class="links">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+
+            <div class="main-chat">
+                <div class="left-text">
+                    <p>Hi..&#128526;</p>
+                </div>
+                <div class="right-text">
+                    <p>Lorem, ipsum dolor.</p>
+                </div>
+                <div class="right-text">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="left-text">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="left-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, expedita.</p>
+                </div>
+                <div class="right-text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.&#128578;</p>
+                </div>
+                <div class="right-text">
+                    <p>Lorem ipsum dolor sit amet consectetur &#128512;</p>
+                </div>
+            </div>
+
+            <div class="msg-box flex">
+                <div class="msg-box-icon">
+                    <i class="fa-solid fa-face-smile"></i>
+                    <i class="fa-solid fa-paperclip"></i>
+                </div>
+                <div class="msg-input-box">
+                    <input type="text" placeholder="Type a message">
+                </div>
+                <div class="msg-box-icon">
+                    <i class="fa-solid fa-microphone"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
