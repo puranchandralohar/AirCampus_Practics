@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+}
+
+header{
+    background-color: #fcf9f9;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px 0;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.logo{
+    flex:1;
+}
+
+.logo a{
+    font-family: 'Pacifico', cursive;
+    color:#000;
+    text-decoration: none;
+    /* font-weight: 600; */
+    font-size: 26px;
+}
+
+.search-bar{
+    flex:2;
+}
+
+.search-bar .fa-magnifying-glass{
+    position: relative;
+    left:30px;
+}
+
+.search-bar input{
+    border:none;
+    outline:none;
+    padding: 15px 35px;
+    background-color: #eaeaea;  
+    border-radius: 10px;
+    width: 80%; 
+}
+
+.icons{
+    flex:1;
+}
+.icons i{
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.header-profile img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.profile{
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+.data{
+    width:60%;
+}
+.profile-pic img{
+    border-radius: 50%;
+}
+
+
+.data .name{
+    font-size: 40px;
+}
+
+.edit-btn{
+    border:2px solid #d5d4d4;
+    padding: 10px;
+    text-decoration: none;
+    color:#000;
+    border-radius: 10px;  
+}
