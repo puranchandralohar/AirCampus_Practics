@@ -1,1 +1,1 @@
-<img src="/01.06.2022/Grid_Practice/images/result.png">
+<img src="/01.06.2022_Grid_Practice/images/result.png">
