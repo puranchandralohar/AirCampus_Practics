@@ -71,22 +71,22 @@ header{
     justify-content: space-evenly;
 }
 
-.data{
-    width:60%;
-}
 .profile-pic img{
     border-radius: 50%;
 }
 
-
-.data .name{
-    font-size: 40px;
+.data{
+    width:60%;
 }
-
-.edit-btn{
-    border:2px solid #d5d4d4;
-    padding: 10px;
-    text-decoration: none;
-    color:#000;
-    border-radius: 10px;  
+.data p{
+    font-size: 30px;
+    margin-right: 25px;
+}
+.follow-btn{
+    padding: 10px 12px;
+    border:none;
+    outline:none;
+    background-color: #4c4cf8;
+    color:#fff;
+    border-radius: 5px;
 }
