@@ -1,0 +1,31 @@
+header{
+    background-color: blueviolet;
+    grid-area:header;
+}
+nav{
+    background-color: tomato;
+    grid-area:nav;
+}
+article{
+    background-color: cadetblue;
+    grid-area:article;
+}
+aside{
+    background-color: violet;
+    grid-area:aside;
+}
+footer{
+    background-color: teal;
+    grid-area:footer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns:200px 800px auto;
+    grid-template-rows: 100px 200px 200px 100px;
+    grid-template-areas: 
+      "header header header"
+      "nav article aside"
+      "nav article aside"
+      "footer footer footer";
+  }
