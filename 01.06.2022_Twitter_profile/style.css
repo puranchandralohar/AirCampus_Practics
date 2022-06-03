@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 800px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.cover{
+    height:150px;
+    background-image: url("https://media.istockphoto.com/photos/teamwork-network-and-community-concept-picture-id1333584170?b=1&k=20&m=1333584170&s=170667a&w=0&h=P4nFyCpYpvWm_UfTDtP5Ss0zpwIHeU-vSff4pID1iK8=");
+}
+.icons{
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.icons .fa-solid{
+    padding: 15px;
+    background:rgb(7, 7, 7);
+    color: #fff;
+    opacity: 0.6;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.profile{
+    justify-content: space-between;
+}
+
+.profile-pic{
+    position: relative;
+}
+
+.profile-pic img{
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    position: absolute;
+    top:-80px;
+    left:50px;
+}
+.following{
+    margin-top:10px;
+    padding: 8px 12px;
+    border:none;
+    background-color: #4747fd;
+    color:#fff;
+    border-radius: 8px;
+}
