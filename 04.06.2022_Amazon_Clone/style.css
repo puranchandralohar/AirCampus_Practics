@@ -4,15 +4,26 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: #8c8a8a;
+}
+
+/* Global Starts */
+
 .flex {
   display: flex;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+.grid{
+  display: grid;
 }
 
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+/* Global Ends */
+/* Header Starts Here */
 header {
   background-color: #333;
   align-items: center;
@@ -236,6 +247,8 @@ header {
 .cart span {
   font-size: 1.5em;
 }
+/* Header Ends */
+/* Subheading */
 .sub-header{
   padding: 10px;
   justify-content: space-between;
@@ -247,4 +260,91 @@ header {
   color:#fff;
   text-decoration: none;
   margin-left:15px;
+}
+/* Subheading Ends */
+    /* Banner Starts Here */
+.banner img{
+  width:100%;
+  height:500px;
+}
+/* Banner Ends */
+
+/* Main Starts Here */
+
+.grid-container img{
+  height:100%;
+  max-width: 100%;
+}
+
+/* General Grid Container */
+.grid-container{
+  width:100vw;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas: 
+    "box1 box1 box1 box1"
+    "box2 box3 box4 box5"
+    "box6 box7 box box9"
+    "box10 box11 box12 box13";
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+/* General Grid Items inside Grid Container */
+.item{
+  padding: 10px;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(2,auto);
+  grid-template-areas: 
+  "item1 item2"
+  "item3 item4";
+  justify-items: center;
+  align-items: center;
+}
+.item1{
+  grid-area: item1;
+}
+.item2{
+  grid-area:item2;
+}
+.item3{
+  grid-area: item3;
+}
+.item4{
+  grid-area: item4;
+}
+
+.row{
+  border:1px solid black;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.box1{
+  grid-area: box1;
+  text-align: center;
+  padding: 10px;
+}
+.box1 a{
+  text-decoration: none;
+}
+.box1 a:hover{
+  text-decoration: underline;
+}
+
+.box2{
+  grid-area: box2;
+
+}
+.box3{
+  grid-area: box3;
+}
+.box4{
+  grid-area: box4;
+}
+.box5{
+  grid-area:box5;
+}
+.box6{
+  grid-area: box6;
 }
