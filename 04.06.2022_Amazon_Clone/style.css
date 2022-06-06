@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,800;1,300;1,400;1,500;1,800&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +6,8 @@
 }
 
 body{
-  background-color: #8c8a8a;
+  background: linear-gradient(180deg,#687393,#5c6787);
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Global Starts */
@@ -19,7 +21,7 @@ body{
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 /* Global Ends */
@@ -47,6 +49,8 @@ header {
 .location {
   padding: 10px;
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .location-name {
@@ -56,17 +60,18 @@ header {
 .small-text {
   font-size: 0.8em;
   color: #ccc;
+  font-weight: 300;
 }
 
 .large-text {
   color: #e3e3e3;
   font-size: 1em;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .fa-location-dot {
   position: absolute;
-  bottom: 15px;
+  bottom: 25px;
   left: 0;
   color: #fff;
 }
@@ -94,27 +99,29 @@ header {
 }
 
 .search-bar input {
-  padding: 8px 12px;
+  padding: 20px 12px;
   border: none;
 }
 
 .search-bar select {
-  padding: 7px 0;
+  padding: 20px 10px;
   background-color: #ccc;
   outline: none;
   border: none;
+  border-radius: 5px ;
 }
 
-.search-bar button {
+/* .search-bar button {
   padding: 2px 10px;
-}
+} */
 
 .search-box .fa-magnifying-glass {
   position: absolute;
   top: 0px;
-  right: 0px;
-  padding: 7.5px 10px;
+  right: -5px;
+  padding: 19.5px 20px;
   background-color: orange;
+  border-radius: 0 5px 5px 0;
 }
 
 .user-links {
@@ -245,7 +252,8 @@ header {
   color: #fcebeb;
 }
 .cart span {
-  font-size: 1.5em;
+  font-size: 1em;
+  font-weight: 500;
 }
 /* Header Ends */
 /* Subheading */
@@ -263,29 +271,37 @@ header {
 }
 /* Subheading Ends */
     /* Banner Starts Here */
-.banner img{
+
+.banner{
+  background-image: url("https://m.media-amazon.com/images/I/61-8rBAD68L._SX3000_.jpg");
+  height:500px;
+  background-size: cover;
+  margin-bottom: -300px;
+}
+/* .banner img{
   width:100%;
   height:500px;
-}
+} */
 /* Banner Ends */
 
 /* Main Starts Here */
 
 .grid-container img{
   height:100%;
-  max-width: 100%;
+  max-width:100%;
 }
 
 /* General Grid Container */
 .grid-container{
   width:100vw;
   grid-template-columns: repeat(4, auto);
-  grid-template-rows: repeat(7, auto);
+  grid-template-rows: repeat(7,auto);
   grid-template-areas: 
     "box1 box1 box1 box1"
     "box2 box3 box4 box5"
-    "box6 box7 box box9"
-    "box10 box11 box12 box13";
+    "box6 box7 box8 box9"
+    "box10 box10 box10 box10"
+    "box11 box11 box11 box11";
     row-gap: 10px;
     column-gap: 20px;
 }
@@ -315,9 +331,16 @@ header {
 }
 
 .row{
-  border:1px solid black;
   background-color: #fff;
-  padding: 10px;
+  padding: 30px 10px;
+}
+
+.row img{
+  padding: 20px 10px;
+}
+.row a{
+  text-decoration: none;
+  color:#6b6b6b;
 }
 
 .box1{
@@ -342,9 +365,40 @@ header {
 .box4{
   grid-area: box4;
 }
+.box4 img{
+  height:85%;
+}
 .box5{
   grid-area:box5;
+ text-align: center;
+}
+.box5 .cta{
+  margin-top:20px;
+  padding: 10px 22px;
+  border:none;
+  background-color: #f3f308;
+  border-radius: 10px;
+  cursor:pointer;
 }
 .box6{
   grid-area: box6;
+}
+.box7{
+  grid-area:box7;
+}
+.box8{
+  grid-area: box8;
+}
+.box9{
+  grid-area: box9;
+}
+.box10{
+  grid-area: box10;
+}
+.box10 img{
+  padding: 5px;
+  
+}
+.box11{
+  grid-area: box11;
 }
