@@ -1,0 +1,1 @@
+<img src="/06.07.22_Calculator/output.png">
